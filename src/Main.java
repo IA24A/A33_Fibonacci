@@ -19,18 +19,18 @@ public class Main {
          * a = 1, b = 2 → next = 1 + 2 = 3
          * ....
          */
-        double number_a = 1, number_b = 1;
+        int number_a = 0;
+        int number_b = 1;
         for (int i = 0; i < input; i++) {
-            if (i == input - 1) {
-                System.out.println("Ihre Zahl in der Fibonacci-Folge ist: " + number_a);
-                break;
-            }
 
-            System.out.println(number_a);
-            double next = number_a + number_b;
+            int next = number_a + number_b; // Um größere Zahlen zu nutzen, können wir double verwenden.
             number_a = number_b;
             number_b = next;
+            // System.out.print(String.valueOf(number_a).replace(".0", "") + " ");
+            System.out.print(number_a + " ");
         }
+        // System.out.println("\nDie " + input + ". Zahl in der Fibonacci-Folge ist: " + String.valueOf(number_a).replace(".0", ""));
+        System.out.println("\nDie " + input + ". Zahl in der Fibonacci-Folge ist: " + number_a);
 
     }
 }
