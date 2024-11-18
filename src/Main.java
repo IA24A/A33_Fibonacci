@@ -21,6 +21,11 @@ public class Main {
          */
         double number_a = 1, number_b = 1;
         for (int i = 0; i < input; i++) {
+            if (i == input - 1) {
+                System.out.println("Ihre Zahl in der Fibonacci-Folge ist: " + number_a);
+                break;
+            }
+
             System.out.println(number_a);
             double next = number_a + number_b;
             number_a = number_b;
