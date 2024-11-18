@@ -17,7 +17,7 @@ public class Main {
          * Die nächste Zahl ist die Summe der beiden vorherigen Zahlen.
          * a = 1, b = 1 → next = 1 + 1 = 2
          * a = 1, b = 2 → next = 1 + 2 = 3
-         * ...
+         * ....
          */
         double number_a = 1, number_b = 1;
         for (int i = 0; i < input; i++) {
